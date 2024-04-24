@@ -2,6 +2,8 @@ const express = require('express');
 const cors = require('cors'); 
 const mongoose = require('mongoose');
 
+
+
 const app = require('./src/app');
 app.use(cors());
 // app.use((req, res, next) => {
@@ -27,6 +29,7 @@ const mongoURI = 'mongodb+srv://djain5888:Deepak%40321@cluster0.jb66uqs.mongodb.
 //     console.warn('For optimal performance, consider creating indexes explicitly based on your application\'s query patterns.');
 //   })
 //   .catch((err) => console.error(err));
+
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
